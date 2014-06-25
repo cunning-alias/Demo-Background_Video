@@ -1,0 +1,47 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Background demo</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>             
+ 
+  <nav class="top-bar" data-topbar>
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="#">
+            Video Background demo
+          </a>
+        </h1>
+      </li>
+      <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
+    </ul>
+  </nav>
+  
+    <script src="js/vendor/jquery.js"></script>
+	<script src="js/jquery.backgroundvideo.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    
+	<!--jquery video code-->
+	<script>
+	  $(document).ready(function() {
+		var videobackground = new $.backgroundVideo($('body'), {
+		  "align": "centerXY",
+		  "width": 1280,
+		  "height": 720,
+		  "path": "media/",
+		  "filename": "cloud",
+		  "types": ["mp4","ogg","webm"]
+		});
+	  });
+	</script>
+	
+	<script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
